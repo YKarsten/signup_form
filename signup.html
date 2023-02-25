@@ -8,6 +8,61 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="grid-container">
+        <div class="grid-item grid-background-image"></div>
+        <div class="grid-item grid-backgroundoverlay">Placeholder for an image overlay with a logo</div>
+        <div class="grid-item grid-header">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minus cupiditate animi voluptatibus quidem doloribus blanditiis dolores aut temporibus, odit non eligendi assumenda dicta placeat eveniet ea qui repudiandae. Delectus beatae ad magni. Ab, iste. Nisi quo aut, repudiandae architecto doloremque non, quibusdam temporibus dicta possimus ad ea! Ratione, aliquid.</p>
+        </div>
+        <div class="grid-item grid-form">
+            
+            <form action="" method="get" class="speaker-form">
+            <h1>Let's do this!</h1>
+                <div class="form-row">
+                    <p class="comment-form name">
+                        <label for="name" data-help="¿Are you 11 from Stranger Things?">Name</label>
+                        <input id="name" placeholder="Name *" name="name" type="text" value="" pattern="^[^0-9]+$" size="30" maxlength="245" required>
+                      </p>
+
+                  <p class="comment-form surname">
+                    <label for="surname" data-help="A girl has no name- Arya Stark">Surname</label>
+                    <input id="surname" placeholder="Surname *" name="surname" type="text" value="" size="30" maxlength="245" required>
+                  </p>
+                </div>
+
+
+                  <div class="form-row">
+                      <p class="comment-form email">
+                        <label for="email" data-help="Format email@email.com">Email</label>
+                        <input id="email" placeholder="Email *" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required>
+                      </p>
+                        <p class='comment-form telephone'>
+                            <label for="telephone" data-help="(+49) 12345678">telephone</label>
+                            <input id="telephone" placeholder="Telephone" name="telephone" type="tel" value="" size="30" maxlength="100">
+                        </p>
+                  </div>
+
+                    <div class="form-row">
+                        <p class='comment-form password'>
+                            <label for="password" data-help="At least one number and one capital letter">password</label>
+                            <input id="password" placeholder="Password *" name="password" type="text" value="" size="30" maxlength="245" required>
+                        </p>
+                        <p class='comment-form password confirm'>
+                            <label for="password" data-help="">confirm password</label>
+                            <input id="password" name="password" type="text" value="" size="30" maxlength="245" required>
+                        </p>
+                    </div>
+                  
+              </form>
+
+        </div>
+        <div class="grid-item grid-footer">
+            <div class="form-submit">
+                <input name="submit" type="submit" id="submit" class="submit" value="create an account">
+                <p>Already got an account? Log in</p>
+              </div>
+        </div>
+    </div>
     
 </body>
 </html>

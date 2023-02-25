@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* rough grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+
+    align-content: center;
+    height: 80vh;
+}
+
+.grid-background-image {
+    grid-row: 1 / -1;
+    background-image: url("ai-background.webp");
+}
+
+.grid-backgroundoverlay {
+    grid-row: 1 / -1;
+    position: absolute;
+    background-color: yellow;
+}
+
+.grid-header {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 100px 80px 0 0;
+}
+
+.grid-form {
+    grid-column: 2;
+    grid-row: 2;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+        padding: 10px 35px 20px;
+        margin-top: 40px;
+}
+
+.grid-footer {
+    grid-column: 2;
+    grid-row: 3;
+}
+/* form layout  */
+.form-row { 
+    display: flex;
+}
+
+.comment-form {
+    margin-right: 50px;
+    margin-top: 12px;
+}
+
+label, input {
+    display: block;
+}
+
+label {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+h1, label, p {
+    margin-left: 15px;
+}
+
+/* Style inputs */
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
+
+  /* Style the submit button */
+  input[type=submit] {
+    width: 25%;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Add a background color to the submit button on mouse-over */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
