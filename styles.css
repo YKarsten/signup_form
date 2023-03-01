@@ -3,14 +3,23 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: "typewriter";
+    src: url("fonts/momt___-webfont.woff2") format("woff2"), 
+    url("fonts/momt___-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    }
+
 /* rough grid layout */
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 2fr 1fr;
-
     align-content: center;
     height: 80vh;
+    width: 70vw;
+    margin: 10vh auto ;
 }
 
 .grid-background-image {
@@ -19,12 +28,14 @@
 }
 
 .grid-backgroundoverlay {
-    grid-row: 1 / -1;
-    position: absolute;
-    background-color: yellow;
+    grid-row: 1 / 1;
+    background-image: url("ai-logo.png");
+    opacity: 0.6;
+    z-index: 5;
 }
 
 .grid-header {
+    font: 1em "typewriter", monospace;
     grid-column: 2;
     grid-row: 1;
     margin: 100px 80px 0 0;
@@ -33,16 +44,26 @@
 .grid-form {
     grid-column: 2;
     grid-row: 2;
-        background-color: white;
-        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-        padding: 10px 35px 20px;
-        margin-top: 40px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    margin-top: 40px;
+    
+    /* align content to div center*/
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 .grid-footer {
     grid-column: 2;
     grid-row: 3;
+    
 }
+
+.grid-element {
+    padding: 10px 25px 20px;
+}
+
 /* form layout  */
 .form-row { 
     display: flex;
@@ -65,7 +86,7 @@ label {
 }
 
 h1, label, p {
-    margin-left: 15px;
+    margin-left: 35px;
 }
 
 /* Style inputs */
